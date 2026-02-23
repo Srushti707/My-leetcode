@@ -1,0 +1,5 @@
+// Title: Binary Search
+            // Difficulty: Unknown
+            // Language: undefined
+            // Link: https://leetcode.com/problems/binary-search/
+
