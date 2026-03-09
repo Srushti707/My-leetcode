@@ -3,14 +3,20 @@
             // Language: Java
             // Link: https://leetcode.com/problems/find-the-duplicate-number/
 
-        {
-            if(arr.contains(num)) return num;
-            else arr.add(num);
+            if(nums[i]!=nums[correctIndex]) swap(nums,i,correctIndex);
         }
-        return -1;
     }
-}
-        for(int num: nums)
-        Set<Integer> arr= new HashSet<>();
+    public void swap(int[] nums, int first, int second)
+    {
+            else i++;
+        for(int j=0; j<nums.length; j++)
+        {
+            if(j!= nums[j]-1) return nums[j];
+        }
+            int correctIndex=nums[i]-1;
+        {
+        while(i<nums.length)
+        int i=0;
     public int findDuplicate(int[] nums) {
 class Solution {
+        return -1;
