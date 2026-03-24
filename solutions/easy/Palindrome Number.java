@@ -20,4 +20,3 @@ class Solution {
         }
         if(x==a || x==a/10)
         {
-            return true;
