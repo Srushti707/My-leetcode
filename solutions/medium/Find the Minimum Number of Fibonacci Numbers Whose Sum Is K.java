@@ -3,20 +3,20 @@
             // Language: Java
             // Link: https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/
 
-class Solution {
-    public int findMinFibonacciNumbers(int k) {
-        ArrayList<Integer> arr = fibonacci(k);
-        int sum = 0, count=0;
-        while (sum < k) {
-            int value = binarySearch(arr, k - sum);
-            count+=1;
-            sum += value;
+            i++;
         }
-        return count;
+        return list;
     }
 
-    public ArrayList<Integer> fibonacci(int k) {
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(1);
-        int i = 2;
+    public int binarySearch(ArrayList<Integer> arr, int k) {
+        int start = 0;
+        int end = arr.size() - 1;
+        while (start <=end) {
+            int mid = start + (end - start) / 2;
+            int val = arr.get(mid);
+            if (val == k) {
+                return val;
+            } else if (val > k) {
+                end = mid - 1;
+            } else
+                start = mid + 1;
