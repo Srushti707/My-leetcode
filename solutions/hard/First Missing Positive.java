@@ -3,19 +3,20 @@
             // Language: Java
             // Link: https://leetcode.com/problems/first-missing-positive/
 
-class Solution {
-    public int firstMissingPositive(int[] nums) {
-        HashSet<Integer> set= new HashSet<>();
-        for(int num: nums)
+        for(int j=0; j<nums.length;j++)
         {
-            set.add(num);
+            if(j!=nums[j]-1) return j+1;
         }
-        for(int i=1; i<=nums.length+1; i++)
-        {
-            System.out.println(i);
-            else return i;
-        }
-        return -1;
+        return nums.length+1;
     }
-            if(set.contains(i)) continue;
-}
+    static void swap(int[] arr, int first , int second)
+        }
+            else i++;
+            if(nums[i]>0 && nums[i]<nums.length+1 && nums[i]!= nums[correctIndex]) swap(nums,i,
+correctIndex);
+        while(i<nums.length)
+        {
+            int correctIndex=nums[i]-1;
+    public int firstMissingPositive(int[] nums) {
+        int i=0;
+class Solution {
