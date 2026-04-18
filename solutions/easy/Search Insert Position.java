@@ -20,3 +20,4 @@ class Solution {
             {
                 return mid;
             }
+            else if(nums[mid]>target)
