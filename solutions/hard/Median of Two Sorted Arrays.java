@@ -20,4 +20,3 @@ class Solution {
             double num2= arr3[mid+1];
             return (num1+num2)/2;
         }
-        else
