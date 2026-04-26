@@ -14,3 +14,8 @@ class Solution {
                 return new int[]{numMap.get(complement), i};
             }
             numMap.put(nums[i], i);
+        }
+
+        return new int[]{}; // No solution found
+    }
+}
