@@ -20,3 +20,4 @@ class Solution {
             {
                 sum-=map.get(s.charAt(i));
             }
+            else sum+=map.get(s.charAt(i));
