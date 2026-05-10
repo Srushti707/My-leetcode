@@ -16,6 +16,6 @@ class Solution {
             numMap.put(nums[i], i);
         }
 
-        return new int[]{}; // No solution found
+        return new int[]{}; 
     }
 }
