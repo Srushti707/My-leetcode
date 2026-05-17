@@ -10,11 +10,10 @@ class Solution {
         while(start<end)
         {
             int mid=start+(end-start)/2;
-            System.out.println(nums[mid]);
             if(nums[mid]>nums[end]) start=mid+1;
+            else end=mid;
 
         }
         return nums[start];
     }
-            else end=mid;
 }
