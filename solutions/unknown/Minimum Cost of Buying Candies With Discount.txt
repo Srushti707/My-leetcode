@@ -1,0 +1,5 @@
+// Title: Minimum Cost of Buying Candies With Discount
+            // Difficulty: Unknown
+            // Language: undefined
+            // Link: https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/
+
