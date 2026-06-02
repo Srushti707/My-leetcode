@@ -19,5 +19,3 @@ class Solution {
             if(i+1<s.length() &&map.get(s.charAt(i+1))> map.get(s.charAt(i)))
             {
                 sum-=map.get(s.charAt(i));
-            }
-            else sum+=map.get(s.charAt(i));
