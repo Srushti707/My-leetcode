@@ -21,3 +21,5 @@ class Solution {
                 return mid;
             }
             else if(nums[mid]>target)
+            {
+                end=mid-1;
