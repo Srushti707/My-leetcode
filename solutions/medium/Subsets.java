@@ -3,20 +3,23 @@
             // Language: Java
             // Link: https://leetcode.com/problems/subsets/
 
+    }
 
-    static void subset(int i, int[] arr, List<Integer> list,List<List<Integer>> ans)
+    static void subset(int[] nums,List<Integer>list, List<List<Integer>> ans, int i )
     {
-        if(i>=arr.length) 
+        if(i>=nums.length)
         {
             ans.add(new ArrayList<>(list));
-            return;
         }
+            return;
+
         //pick
-        list.add(arr[i]);
-        subset(i+1, arr, list, ans);
-    }
-        List<List<Integer>> ans= new ArrayList<>();
-class Solution {
-    public List<List<Integer>> subsets(int[] nums) {
-        subset(0, nums, new ArrayList<>(), ans);
+        list.add(nums[i]);
+        subset(nums,list,ans,i+1);
+        list.remove(list.size()-1);
+        //not pick
         return ans;
+        subset(nums,new ArrayList<>(),ans,0);
+        List<List<Integer>> ans= new ArrayList<>();
+        subset(nums,list,ans,i+1);
+    }
