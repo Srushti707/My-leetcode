@@ -21,3 +21,5 @@ class Solution {
             return (num1+num2)/2;
         }
         else
+        {
+            return arr3[mid];
