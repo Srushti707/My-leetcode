@@ -12,8 +12,7 @@ class Solution {
 
 
     }
-    static void subset(int[] nums, List<Integer> list, Set<List<Integer>> ans, 
-    int i)
+    static void subset(int[] nums, List<Integer> list, Set<List<Integer>> ans, int i)
     {
         if(i== nums.length)
         {
@@ -23,3 +22,4 @@ class Solution {
 
         //pick 
         list.add(nums[i]);
+        subset(nums,list, ans, i+1);
