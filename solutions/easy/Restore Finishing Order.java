@@ -3,20 +3,22 @@
             // Language: Java
             // Link: https://leetcode.com/problems/restore-finishing-order/
 
-        for(int o:order)
+class Solution {
+    public int[] recoverOrder(int[] order, int[] friends) {
+        int[] ans= new int[friends.length];
+        Set<Integer> friends2= new HashSet<>();
+        for(int friend:friends)
         {
-            if(friends2.contains(o))
-        }
             friends2.add(friend);
         }
         int i=0;
-            {
-                ans[i]=o;
-            }
-                i++;
+        for(int o:order)
         {
-        for(int friend:friends)
-        int[] ans= new int[friends.length];
-        Set<Integer> friends2= new HashSet<>();
+            if(friends2.contains(o))
+            {
+                ans[i++]=o;
+            }
+        }
         return ans;
     }
+}
