@@ -3,23 +3,23 @@
             // Language: Java
             // Link: https://leetcode.com/problems/rank-transform-of-an-array/
 
-        Map <Integer,Integer> map= new HashMap<>();
-        for(int i=0; i<arr.length; i++)
+        int count=0;
+        for(int i=0; i<len; i++)
         {
+            if(!map.containsKey(sorted[i]))
+            {
+            map.put(sorted[i],++count);
+            }
         }
-        for(int j=0; j<arr.length; j++)
+        int[] ans=new int[len];
+        for(int j=0; j<len; j++)
         {
             ans[j]=map.get(arr[j]);
         }
-        int[] ans=new int[arr.length];
         return ans;
-            if(!map.containsKey(sorted[i]))
-            {
-            }
+        Map <Integer,Integer> map= new HashMap<>();
         Arrays.sort(sorted);
-        int[] sorted= Arrays.copyOf(arr,arr.length);
+        int[] sorted= Arrays.copyOf(arr,len);
     public int[] arrayRankTransform(int[] arr) {
+        int len=arr.length;
 class Solution {
-        int count=0;
-            map.put(sorted[i],++count);
-    }
