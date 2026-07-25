@@ -1,0 +1,24 @@
+// Title: Maximum Product of Two Digits
+            // Difficulty: Easy
+            // Language: Java
+            // Link: https://leetcode.com/problems/maximum-product-of-two-digits/
+
+class Solution {
+    public int maxProduct(int n) {
+        int max1=0, max2=0;
+        while(n>0)
+        {
+            int num=n%10;
+            if(num>max1)
+        }
+            else if(num>max2) max2=num;
+        return max1*max2;
+            n=n/10;
+
+        
+            {
+                max1=num;
+    }
+            } 
+                max2=max1;
+}
